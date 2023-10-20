@@ -56,16 +56,16 @@ public class LoginTest extends BaseClass {
       loginPom.setInputPassword(value);
       Thread.sleep(5000);
       loginPom.clickOnButton();
-      getDataFromExcel();
+    //  getDataFromExcel();
     }
-    public void getDataFromExcel() throws IOException {
-    	Utility utility = new Utility();
-    	
-    	Sheet sh= utility.getSheet("Sheet1");
-    	
-    	utility.getAllExcelData(sh);
-    //String key=	(String) utility.getSingleData(1, 0, sh);
-    //String value=(String) utility.getSingleData(1, 1, sh);
-    
-    }
+//    public void getDataFromExcel() throws IOException {
+//    	Utility utility = new Utility();
+//    	
+//    	Sheet sh= utility.getSheet("Sheet1");
+//    	
+//    	utility.getAllExcelData(sh);
+//    String key=	(String) utility.getSingleData(1, 1, sh);
+//    String value=(String) utility.getSingleData(1, 1, sh);
+//    
+//    }
 }
